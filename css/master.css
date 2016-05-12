@@ -1,0 +1,271 @@
+/* ---------------------------------------------
+RESET
+--------------------------------------------- */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* -------
+COMMONS
+-------*/
+
+body {
+    background: url(../images/bg-1.png);
+    font: 13px Tahoma, Verdana, sans-serif;
+}
+
+p:last-child {
+    padding-bottom: 0;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+
+/* Ex-clearfix */
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Structure */
+
+@media screen and (min-width: 1200px) {
+    .block-header > .inner,
+    .block-nav > .inner,
+    .block-center > .inner,
+    .block-footer > .inner {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .block-zone > .inner {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+
+/* -------
+HEADER
+------ */
+
+.block-header {
+    background: #FFF;
+    border-bottom: 3px solid #272727;
+    position: relative;
+    padding: 1.5rem 0;
+    margin-bottom: 2em;
+}
+
+.block-header .logo,
+.block-header .slogan {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Chau Philomene One', cursive, sans-serif;
+    color: #4c4c4c;
+}
+
+.block-header .logo {
+    margin-left: 1em;
+}
+
+
+/* ---------
+FILTER
+------- */
+
+.block-filter {
+    display: none;
+    background: #444;
+    margin: 0.5rem;
+    padding: 1rem 1.6rem;
+    border-radius: 5px;
+}
+
+@media (min-width: 1025px) {
+    .block-filter {
+        display: block;
+    }
+}
+
+.block-filter .nb-results,
+.block-filter .filtering {
+    font-size: 1rem;
+}
+
+.block-filter .nb-results {
+    padding-top: 10px;
+    float: left;
+}
+
+.block-filter .filtering {
+    float: right;
+}
+
+.block-filter .filtering .title,
+.block-filter .filtering .filters,
+.block-filter li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block-filter,
+.block-filter a {
+    color: white;
+}
+
+.block-filter a {
+    font-size: 2rem;
+}
+
+.block-filter a:hover {
+    color: #ca5597;
+}
+
+.block-filter .title {
+    margin-right: .8rem;
+}
+
+
+/* -------
+ARTICLE 
+-------- */
+
+.block-listing {
+    margin-top: 2rem;
+}
+
+.block-listing .item {
+    padding: 0 20px 40px;
+}
+
+.block-listing .item .inner {
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .block-listing .item {
+        float: left;
+        width: 50%;
+        padding: 0 20px 40px;
+    }
+    .list-type-1 .block-listing .item {
+        float: none;
+        width: auto;
+    }
+    .list-type-1 .block-listing .item .picture {
+        float: left;
+        width: 35%;
+    }
+    .list-type-1 .block-listing .item .content {
+        float: left;
+        width: 65%;
+        padding: 0 0 0 10px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .block-listing .item {
+        width: 33%;
+        padding: 0 20px 40px;
+    }
+}
+
+.block-listing .item .picture img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.block-listing .item .name {
+    background: #4c4c4c;
+    padding: .3em 0;
+}
+
+.block-listing .item .name a {
+    color: #FFF;
+    padding-left: .8em;
+    text-transform: uppercase;
+    font-family: 'Chau Philomene One', cursive, sans-serif;
+}
+
+.block-listing .item .description {
+    font-family: 'Catamaran', cursive, sans-serif;
+    color: #767676;
+    line-height: 1.1em;
+}
+
+.block-listing .item .footer {
+    /* NULL */
+}
+
+.block-listing .item .footer .price {
+    float: left;
+}
+
+.block-listing .item .footer .price,
+.block-listing .item .footer .more {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block-listing .item .price .from {
+    font-style: italic;
+    font-size: .9em;
+}
+
+.block-listing .item .price .value {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.block-listing .item .more {
+    float: right;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #ca5597;
+}
+
+
+/* --------
+FOOTER
+-------- */
+
+.block-footer {
+    background-color: #4c4c4c;
+    color: white;
+    text-align: center;
+    padding: 0.3em
+}
