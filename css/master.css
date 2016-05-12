@@ -181,23 +181,29 @@ ARTICLE
         width: 50%;
         padding: 0 20px 40px;
     }
+    
     .list-type-1 .block-listing .item {
         float: none;
         width: auto;
     }
+    
     .list-type-1 .block-listing .item .picture {
         float: left;
         width: 35%;
     }
+    
     .list-type-1 .block-listing .item .content {
         float: left;
         width: 65%;
         padding: 0 0 0 10px;
     }
-    
     .list-type-2 .block-listing .item {
         float: left;
         width: 50%;
+    }
+    
+    .list-type-2 .block-listing .item:nth-child(2N+1) {
+        clear: left;
     }
     
     .list-type-2 .block-listing .item:nth-child(2N+1) {
