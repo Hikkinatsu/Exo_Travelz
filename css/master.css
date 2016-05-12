@@ -194,6 +194,24 @@ ARTICLE
         width: 65%;
         padding: 0 0 0 10px;
     }
+    
+    .list-type-2 .block-listing .item {
+        float: left;
+        width: 50%;
+    }
+    
+    .list-type-2 .block-listing .item:nth-child(2N+1) {
+        clear: left;
+    }
+    
+    .list-type-3 .block-listing .item {
+        float: left;
+        width: 33%;
+    }
+    
+    .list-type-3 .block-lsiting .item:nth-child(3N+1) {
+        clear: left;
+    }
 }
 
 @media (min-width: 1025px) {
