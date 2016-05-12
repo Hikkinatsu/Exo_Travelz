@@ -205,9 +205,9 @@ ARTICLE
         float: left;
         width: 33%;
     }
-    /* .list-type-3 .block-lsiting .item:nth-child(3N+1) {
+    .list-type-3 .block-lsiting .item:nth-child(3N+1) {
         clear: left;
-    } */
+    }
 }
 
 @media (min-width: 1025px) {
