@@ -114,7 +114,7 @@ FILTER
     border-radius: 5px;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
     .block-filter {
         display: block;
     }
@@ -181,17 +181,14 @@ ARTICLE
         width: 50%;
         padding: 0 20px 40px;
     }
-    
     .list-type-1 .block-listing .item {
         float: none;
         width: auto;
     }
-    
     .list-type-1 .block-listing .item .picture {
         float: left;
         width: 35%;
     }
-    
     .list-type-1 .block-listing .item .content {
         float: left;
         width: 65%;
@@ -201,20 +198,16 @@ ARTICLE
         float: left;
         width: 50%;
     }
-    
     .list-type-2 .block-listing .item:nth-child(2N+1) {
         clear: left;
     }
-    
     .list-type-2 .block-listing .item:nth-child(2N+1) {
         clear: left;
     }
-    
     .list-type-3 .block-listing .item {
         float: left;
         width: 33%;
     }
-    
     .list-type-3 .block-lsiting .item:nth-child(3N+1) {
         clear: left;
     }
